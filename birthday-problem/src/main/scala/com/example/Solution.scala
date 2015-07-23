@@ -2,7 +2,7 @@ package com.example
 import akka.actor._
 
 object FindSolutionApp extends App {
-  val system = ActorSystem("PingPongSystem")
+  val system = ActorSystem("SolveProblem")
   val albert = system.actorOf(Props[Albert], name = "albert")
   val bernard = system.actorOf(Props[Bernard], name = "bernard") // start the action
 
