@@ -1,0 +1,40 @@
+!|Add Transaction               |
+|name |category|amount |date    |
+|alex |clothes |100    |13/04/14|
+|alex |food    |31     |15/05/14|
+|alex |food    |110    |19/04/14|
+|alex |food    |50     |19/08/14|
+|maria|clothes |22     |12/04/14|
+|maria|food    |150    |12/04/14|
+|maria|clothes |200    |18/04/14|
+|chris|clothes |8.56   |12/09/14|
+|chris|food    |18.5980|12/09/14|
+|chris|clothes |25.600 |18/09/14|
+
+!|Script|Calculate Statistics|
+|calculate                   |
+|check  |number of persons |3|
+
+!|query: Amount Per Person Query|
+|name          |total           |
+|chris         |52.7580         |
+|alex          |291             |
+|maria         |372             |
+
+!|query: Amount Per Person Per Category Query|
+|name      |category     |amount             |
+|chris     |food         |decimal2:18.60     |
+|chris     |clothes      |decimal2:34.16     |
+|alex      |food         |191                |
+|alex      |clothes      |100                |
+|maria     |food         |150                |
+|maria     |clothes      |222                |
+
+
+!|query: Amount Per Person Per Month Query|
+|name     |month        |amount           |
+|chris    |SEPTEMBER    |decimal2:52.76   |
+|alex     |AUGUST       |50               |
+|alex     |APRIL        |210              |
+|alex     |MAY          |31               |
+|maria    |APRIL        |372              |

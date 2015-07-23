@@ -1,0 +1,7 @@
+|Import|
+|fixtures.global|
+|fixtures.input|
+|fixtures.output|
+|fixtures.controller|
+
+|Initialize System|
